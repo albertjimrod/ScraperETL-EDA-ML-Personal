@@ -8,7 +8,7 @@ import time
 start_time = time.time()
 
 
-os.chdir('/home/ion/Documentos/albertjimrod/personal_projects/hispasonic/htmls')
+os.chdir('/home/ion/Documentos/albertjimrod/personal_proj_hispasonic/htmls')
 
 os.getcwd() # checking path
 
@@ -16,9 +16,9 @@ os.getcwd() # checking path
 
 accion = ["compro","cambio","vendo","regalo","busco","busca",'reparar','piezas']
 
-accesorios = ["maleta","flightcase","sonidos","rack","enracado","enrackado","racks"]
+#accesorios = ["maleta","flightcase","sonidos","rack","enracado","enrackado","racks"]
 
-instrumento = ['sintetizador','piano','teclado','modulo']
+#instrumento = ['sintetizador','piano','teclado','modulo']
                 
 
 sintes = {'000': ['000'], '2hp': ['2hp'], '4ms': ['4ms'], 'acces': ['acces'], 'access': ['access'], 'acidlab': ['acidlab'], 'acl': ['acl'], 'akai': ['akai'], 'alembic': ['alembic'], 'alesis': ['alesis'], 'allen&heath': ['allen&heath'], 'analogaudio1': ['analogaudio1'], 'arp': ['arp'], 'arturia': ['arturia'], 'asm': ['asm'], 'atomosynth': ['atomosynth'], 'axoloty': ['axoloty'], 'balaguer': ['balaguer'], 'baloran': ['baloran'], 'befaco': ['befaco'], 'behringer': ['behringer'], 'bitbox': ['bitbox'], 'boss': ['boss'], 'bubblesound': ['bubblesound', 'instruments'], 'buchla': ['buchla'], 'böhm': ['böhm'], 'casio': ['casio'], 'charvel': ['charvel'], 'chronograf': ['chronograf'], 'clavia': ['clavia', 'electro', 'lead', '3', '4', 'micro', 'modular', 'rack', 'stage', 'wave'], 'coast': ['coast'], 'corsynth': ['corsynth'], 'cosmotronic': ['cosmotronic'], 'cre8audio': ['cre8audio'], 'crumar': ['crumar'], 'cyclone': ['cyclone', 'analogic'], 'deepmind': ['deepmind', '12', '6'], 'delptronics': ['delptronics'], 'dexibell': ['dexibell'], 'digitack': ['digitack'], 'divkid': ['divkid'], 'doepfer': ['doepfer'], 'dreadbox': ['dreadbox'], 'dubreq': ['dubreq'], 'dynacord': ['dynacord'], 'e-mu': ['e-mu'], 'e-rm': ['e-rm'], 'e:m:c': ['e:m:c'], 'electribe': ['electribe'], 'electrosmith': ['electrosmith'], 'electrovoice': ['electrovoice'], 'elektron': ['elektron'], 'elka': ['elka'], 'emc': ['emc'], 'emu': ['emu'], 'endorphin.es': ['endorphin.es'], 'endorphines': ['endorphines'], 'ensoniq': ['ensoniq'], 'eowave': ['eowave'], 'epiphone': ['epiphone'], 'eurorack': ['eurorack'], 'eventide': ['eventide'], 'evh': ['evh'], 'evolver': ['evolver'], 'farfisa': ['farfisa'], 'fender': ['fender'], 'fishman': ['fishman'], 'five12': ['five12'], 'fodera': ['fodera'], 'formanta': ['formanta'], 'fretlight': ['fretlight'], 'friedman': ['friedman'], 'futuresonus': ['futuresonus'], 'gator': ['gator'], 'gemini': ['gemini'], 'generalmusic': ['generalmusic'], 'gibson': ['gibson'], 'gieskes': ['gieskes'], 'godin': ['godin'], 'gotharman': ['gotharman'], 'grayscale': ['grayscale'], 'gretsch': ['gretsch'], 'guild': ['guild'], 'hammond': ['hammond'], 'hartmann': ['hartmann'], 'hexinverter': ['hexinverter'], 'hofner': ['hofner'], 'hypersynth': ['hypersynth'], 'höfner': ['höfner'], 'ibanez': ['ibanez'], 'ik': ['ik'], 'instruo': ['instruo'], 'intellijel': ['intellijel', 'designs'], 'iomega': ['iomega'], 'isla': ['isla'], 'jackson': ['jackson'], 'jaspers': ['jaspers'], 'jomox': ['jomox'], 'joranalogue': ['joranalogue'], 'kawai': ['kawai'], 'kenton': ['kenton'], 'ketron': ['ketron'], 'klavis': ['klavis'], 'knobula': ['knobula'], 'komplete': ['komplete'], 'korg': ['korg'], 'kramer': ['kramer'], 'kurzweil': ['kurzweil'], 'l-1': ['l-1'], 'lakland': ['lakland'], 'livid': ['livid'], 'lmntl': ['lmntl'], 'm-audio': ['m-audio'], 'make': ['make', 'noise'], 'malekko': ['malekko', 'heavy', 'industry'], 'maschine': ['maschine'], 'mellotron': ['mellotron'], 'mfb': ['mfb'], 'miditech': ['miditech'], 'modal': ['modal', 'electronics'], 'models': ['models'], 'modor': ['modor'], 'modular': ['modular'], 'modulus': ['modulus'], 'monome': ['monome'], 'moog': ['moog'], 'mordax': ['mordax'], 'mosaic': ['mosaic'], 'mpc': ['mpc'], 'mrseri': ['mrseri'], 'mutant': ['mutant'], 'neutron': ['neutron'], 'nord': ['nord', 'electro', 'lead', '3', '4', 'micro', 'modular', 'rack', 'stage', 'wave'], 'novation': ['novation'], 'numark': ['numark'], 'oberheim': ['oberheim'], 'octatrack': ['octatrack'], 'paratek': ['paratek'], 'pearl': ['pearl'], 'peavey': ['peavey'], 'percussa': ['percussa'], 'polyend': ['polyend'], 'polygraf': ['polygraf'], 'prs': ['prs'], 'qu-bit': ['qu-bit', 'electronix'], 'quasimidi': ['quasimidi'], 'qubit': ['qubit'], 'quiklok': ['quiklok'], 'rhodes': ['rhodes'], 'rickenbacker': ['rickenbacker'], 'roland': ['roland'], 'roli': ['roli'], 'rossum': ['rossum'], 'sanson': ['sanson'], 'schecter': ['schecter'], 'sensel': ['sensel'], 'sequentix': ['sequentix'], 'shakmat': ['shakmat', 'modular'], 'simmons': ['simmons'], 'soma': ['soma'], 'sonicware': ['sonicware'], 'soundforce': ['soundforce'], 'soundmachines': ['soundmachines'], 'spector': ['spector'], 'sputnik': ['sputnik'], 'squarp': ['squarp'], 'squier': ['squier'], 'ssff': ['ssff'], 'stanton': ['stanton'], 'steinberger': ['steinberger'], 'sterling': ['sterling'], 'strymon': ['strymon'], 'studiologic': ['studiologic', 'music'], 'supercritical': ['supercritical'], 'swissonic': ['swissonic'], 'synamodec': ['synamodec'], 'synthrotek': ['synthrotek'], 'synthstrom': ['synthstrom'], 'synthtech': ['synthtech'], 'tascam': ['tascam'], 'taylor': ['taylor'], 'technos': ['technos'], 'transient': ['transient'], 'trogotronic': ['trogotronic'], 'tubbutec': ['tubbutec'], 'u-he': ['u-he'], 'vermona': ['vermona'], 'virus': ['virus'], 'viscount': ['viscount'], 'voicas': ['voicas'], 'volca': ['volca'], 'vox': ['vox'], 'vpme.de': ['vpme.de'], 'waldorf': ['waldorf'], 'warwick': ['warwick'], 'washburn': ['washburn'], 'wurlitzer': ['wurlitzer'], 'yamaha': ['yamaha'], 'yocto': ['yocto'], 'zoom': ['zoom'], '0': ['coast'], '1010': ['music'], 'a-v-p': ['synth'], 'acid': ['rain'], 'addac': ['system'], 'after': ['later'], 'aion': ['modular'], 'ajh': ['synth'], 'allen': ['&'], 'alm': ['busy'], 'alright': ['devices'], 'analogue': ['solutions', 'systems'], 'atomo': ['synth'], 'audio': ['damage'], 'audiophile': ['circuits'], 'bastl': ['instruments'], 'black': ['corporation'], 'blackhole': ['cases'], 'blue': ['lantern'], 'boredbrain': ['music'], 'charlie': ['lab'], 'circuit': ['abbey'], 'club': ['of'], 'custom': ['made'], 'dave': ['jones', 'smith', 'instruments'], 'delta': ['music'], 'denon': ['dj'], 'dnipro': ['modular'], 'e': ['mu'], 'elby': ['designs'], 'electronic': ['music'], 'emblematic': ['systems'], 'empress': ['effects'], 'erica': ['synths'], 'ernie': ['ball'], 'erogenous': ['tones'], 'eskatonic': ['modular'], 'esp': ['ltd'], 'exodus': ['digital'], 'frap': ['tool', 'tools'], 'frequency': ['central'], 'future': ['retro', 'sound'], 'graph': ['tech'], 'hinton': ['instruments'], 'industrial': ['music'], 'io': ['instruments'], 'john': ['bowen'], 'kilpatrick': ['audio'], 'koma': ['elektronik'], 'line': ['6'], 'linn': ['electronics'], 'logan': ['electronics'], 'low-gain': ['electronics'], 'lzx': ['industries'], 'macbeth': ['studio'], 'manhattan': ['analog'], 'manikin': ['electronic'], 'meng': ['qi'], 'michigan': ['synth'], 'micro': ['modular'], 'modbap': ['modular'], 'mutable': ['instruments'], 'nano': ['modules'], 'native': ['instruments'], 'noise': ['engineering'], 'orthogonal': ['devices'], 'patching': ['panda'], 'pioneer': ['dj'], 'pittsburgh': ['modular'], 'plankton': ['electronics'], 'poly': ['effects'], 'ppg': ['ppg'], 'qu': ['bit'], 'radikal': ['technologies'], 'random': ['source'], 'ritual': ['electronics'], 'schlappi': ['engineering'], 'sequential': ['circuits'], 'special': ['waves'], 'spectral': ['audio'], 'steady': ['state'], 'studio': ['electronics'], 'synthesis': ['technology'], 'system': ['80'], 'tall': ['dog'], 'tasty': ['chips'], 'teenage': ['engineering'], 'tenderfoot': ['electronics'], 'tesseract': ['modular'], 'tiptop': ['audio'], 'traveler': ['guitar'], 'udo': ['audio'], 'uno': ['synth'], 'verbos': ['electronics'], 'waves': ['grendel'], 'wersi': ['music'], 'winter': ['modular'], 'wmd': ['ssf'], 'worng': ['electronics'], 'xaoc': ['devices'], 'xor': ['electronics'], 'zeppelin': ['design'], 'zlob': ['modular']}
@@ -45,6 +45,18 @@ list_oferta = []
 list_brand = []
 list_descripcion = []    
 texto_descriptivo_salida = []                                      # esto es lo que se vera como contenido del anuncio
+
+list_price = []
+list_user = []
+list_city = []
+list_published = []
+list_expire = []
+list_times_seen= [] 
+list_date = []
+list_dates = []
+
+
+
 
 lista_palabras_para_eliminar = []
 
@@ -266,26 +278,69 @@ for pagina_anuncio in os.listdir('.'):                                  # '.' ha
             #print("\t","\t",texto_descriptivo)
             texto_descriptivo =''
 
+
+            # --- price
+    
+            try:
+                price = soup.find('div',class_='ad-price').text
+                price = int(price.split()[0])
+                list_price.append(price)
+            except:
+                price = 0
+                list_price.append(price)
+
+
+
+            # --- user name
+
+            user = soup.find('div',class_='col-lg-7').a.text
+            list_user.append(user)
+        
+            # --- city
+        
+            city = soup.find('div',class_='col-lg-7').div.strong.text
+            list_city.append(city)
+            
+            # --- published
+        
+            published = soup.find('div',class_='col-lg-7').div.text.split()[3]
+            list_published.append(published)
+            
+            # --- expire 
+        
+            expire = soup.find('div',class_="expira").text.split()[1]
+            list_expire.append(expire)
+            
+            # --- times seen
+            seen = soup.find('div',class_="expira").text.split()[4]
+            list_times_seen.append(seen)
+
             lista_palabras_para_eliminar.clear()
             print(pagina_anuncio)
 
 
             
-df = pd.DataFrame({'urgente':list_urgente,
-                   'compro':list_compro,
-                   'cambio':list_cambio,
-                   'vendo':list_vendo,
-                   'regalo':list_regalo,
-                   'busco':list_busco,
-                   'reparar':list_reparar,
-                   'piezas':list_piezas,
-                   'marca':list_brand,
-                   'descripcion':texto_descriptivo_salida
+df = pd.DataFrame({'urgent':list_urgente,
+                   'buy':list_compro,
+                   'change':list_cambio,
+                   'sell':list_vendo,
+                   'price':list_price,
+                   'gift':list_regalo,
+                   'search':list_busco,
+                   'repair':list_reparar,
+                   'parts':list_piezas,
+                   'synt_brand':list_brand,
+                   'description':texto_descriptivo_salida,
+                   'user':list_user,
+                   'city':list_city,
+                   'published':list_published,
+                   'expire':list_expire,
+                   'seen':list_times_seen
                   },index = list(range(1,len(texto_descriptivo_salida)+1)))
 
 print('Dataframa:\n', df)
 
-hispa_csv_data = df.to_csv('hispa_dataframa.csv', index = True)
+hispa_csv_data = df.to_csv('hispa_dataframe.csv', index = True)
 
 print("Process finished --- %s seconds ---" % (time.time() - start_time))
 
