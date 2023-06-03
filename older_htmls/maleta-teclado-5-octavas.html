@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="es" xml:lang="es">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# hispasoniccom: http://ogp.me/ns/fb/hispasoniccom#">
+
+<link rel="preconnect dns-prefetch" href="https://s1.adform.net">
+<link rel="preconnect dns-prefetch" href="https://adclick.g.doubleclick.net">
+<link rel="preconnect dns-prefetch" href="https://pagead2.googlesyndication.com">
+<link rel="preconnect dns-prefetch" href="https://www.googletagmanager.com">
+<link rel="preconnect dns-prefetch" href="https://securepubads.g.doubleclick.net">
+<link rel="preconnect dns-prefetch" href="https://www.thomann.de">
+<link rel="preconnect dns-prefetch" href="https://files.soniccdn.com">
+<link rel="preconnect dns-prefetch" href="https://statics.soniccdn.com">
+<link rel="preconnect dns-prefetch" href="https://mercasonic.soniccdn.com">
+
+<!-- Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) -->
+<script type="text/javascript" async=true>
+(function() {
+  var host = window.location.hostname;
+  var element = document.createElement('script');
+  var firstScript = document.getElementsByTagName('script')[0];
+  var url = 'https://quantcast.mgr.consensu.org'
+    .concat('/choice/', 'ULqKYay8KKbph', '/', host, '/choice.js')
+  var uspTries = 0;
+  var uspTriesLimit = 3;
+  element.async = true;
+  element.type = 'text/javascript';
+  element.src = url;
+
+  firstScript.parentNode.insertBefore(element, firstScript);
+
+  function makeStub() {
+    var TCF_LOCATOR_NAME = '__tcfapiLocator';
+    var queue = [];
+    var win = window;
+    var cmpFrame;
+
+    function addFrame() {
+      var doc = win.document;
+      var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+
+      if (!otherCMP) {
+        if (doc.body) {
+          var iframe = doc.createElement('iframe');
+
+          iframe.style.cssText = 'display:none';
+          iframe.name = TCF_LOCATOR_NAME;
+          doc.body.appendChild(iframe);
+        } else {
+          setTimeout(addFrame, 5);
+        }
+      }
+      return !otherCMP;
+    }
+
+    function tcfAPIHandler() {
+      var gdprApplies;
+      var args = arguments;
+
+      if (!args.length) {
+        return queue;
+      } else if (args[0] === 'setGdprApplies') {
+        if (
+          args.length > 3 &&
+          args[2] === 2 &&
+          typeof args[3] === 'boolean'
+        ) {
+          gdprApplies = args[3];
+          if (typeof args[2] === 'function') {
+            args[2]('set', true);
+          }
+        }
+      } else if (args[0] === 'ping') {
+        var retr = {
+          gdprApplies: gdprApplies,
+          cmpLoaded: false,
+          cmpStatus: 'stub'
+        };
+
+        if (typeof args[2] === 'function') {
+          args[2](retr);
+        }
+      } else {
+        queue.push(args);
+      }
+    }
+
+    function postMessageEventHandler(event) {
+      var msgIsString = typeof event.data === 'string';
+      var json = {};
+
+      try {
+        if (msgIsString) {
+          json = JSON.parse(event.data);
+        } else {
+          json = event.data;
+        }
+      } catch (ignore) {}
+
+      var payload = json.__tcfapiCall;
+
+      if (payload) {
+        window.__tcfapi(
+          payload.command,
+          payload.version,
+          function(retValue, success) {
+            var returnMsg = {
+              __tcfapiReturn: {
+                returnValue: retValue,
+                success: success,
+                callId: payload.callId
+              }
+            };
+            if (msgIsString) {
+              returnMsg = JSON.stringify(returnMsg);
+            }
+            if (event && event.source && event.source.postMessage) {
+              event.source.postMessage(returnMsg, '*');
+            }
+          },
+          payload.parameter
+        );
+      }
+    }
+
+    while (win) {
+      try {
+        if (win.frames[TCF_LOCATOR_NAME]) {
+          cmpFrame = win;
+          break;
+        }
+      } catch (ignore) {}
+
+      if (win === window.top) {
+        break;
+      }
+      win = win.parent;
+    }
+    if (!cmpFrame) {
+      addFrame();
+      win.__tcfapi = tcfAPIHandler;
+      win.addEventListener('message', postMessageEventHandler, false);
+    }
+  };
+
+  makeStub();
+
+  var uspStubFunction = function() {
+    var arg = arguments;
+    if (typeof window.__uspapi !== uspStubFunction) {
+      setTimeout(function() {
+        if (typeof window.__uspapi !== 'undefined') {
+          window.__uspapi.apply(window.__uspapi, arg);
+        }
+      }, 500);
+    }
+  };
+
+  var checkIfUspIsReady = function() {
+    uspTries++;
+    if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+      console.warn('USP is not accessible');
+    } else {
+      clearInterval(uspInterval);
+    }
+  };
+
+  if (typeof window.__uspapi === 'undefined') {
+    window.__uspapi = uspStubFunction;
+    var uspInterval = setInterval(checkIfUspIsReady, 6000);
+  }
+})();
+</script>
+<!-- End Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) -->
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5VRVTN');</script>
+<!-- End Google Tag Manager -->
+
+<script async="async" src="https://securepubads.g.doubleclick.net/tag/js/gpt.js">
+</script>
+<script>
+	window.googletag = window.googletag || {cmd: []};
+</script>
+
+<title>Maleta teclado de 5 octavas de segunda mano por 75 € en Barcelona | Hispasonic</title>
+<meta name="title" content="Maleta teclado de 5 octavas de segunda mano por 75 € en Barcelona | Hispasonic">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Vendo maleta para teclado de 5 octavas, usada pero en buen estado.Dimensiones: - exterior: 107x39x16- interior:  103x33x13Puedo enviar, pero los gastos de envio corren a cargo del comprador.saludosRamon">
+<link rel="canonical" href="https://www.hispasonic.com/anuncios/maleta-teclado-5-octavas/1023341">
+<link rel="amphtml" href="https://www.hispasonic.com/amp/anuncios/maleta-teclado-5-octavas/1023341">
+
+<meta name="robots" content="index, follow">
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<meta name="apple-mobile-web-app-capable" content="no">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=5.0">
+<meta property="fb:app_id" content="148990831818226">
+<meta property="og:site_name" content="Hispasonic">
+<meta property="og:url" content="https://www.hispasonic.com/anuncios/maleta-teclado-5-octavas/1023341">
+<meta property="og:title" content="Maleta teclado de 5 octavas de segunda mano por 75 € en Barcelona">
+<meta property="og:image" content="https://mercasonic.soniccdn.com/sda/640/3431/3828431.jpg">
+<meta property="og:description" content="Vendo maleta para teclado de 5 octavas, usada pero en buen estado.Dimensiones: - exterior: 107x39x16- interior:  103x33x13Puedo enviar, pero los gastos de envio corren a cargo del comprador.saludosRamon">
+<meta property="og:type" content="product">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<meta property="fb:pages" content="70084746379">
+<link href="http://feeds.feedburner.com/hispasonic" rel="alternate" type="application/rss+xml" title="RSS Hispasonic">
+<script>document.createElement('main');</script>
+<script>
+	var CKEDITOR_BASEPATH = "https://statics.soniccdn.com/js/ckeditor/";
+
+	var Hispasonic = {
+		User: {
+			id: "",
+			username: "",
+			logged: false,
+			name: "",
+			csrf: "74a3d61197d76eb88c8868e3f9016d42"
+		},
+		Apps: {
+			soundcloud: "94a69758025f7a5a00017887eb2e96bd",
+			youtube: "AIzaSyC8tznh3FafI_uMGWgb_XtxBjaLvHSHyz4",
+			recaptcha: "6LcjyhUaAAAAAFM2iKQVgPLXRiRq6PQiiCZDBjif"
+		},
+		Build: {
+			environment: "production",
+			number: "63610b33d8ca0"
+		}
+	};
+
+	</script>
+
+<link href="https://statics.soniccdn.com/css/style.63610b33d8ca0.css" rel = "stylesheet" type="text/css"  /><link href="https://statics.soniccdn.com/css/ui.theme.63610b33d8ca0.css" rel = "stylesheet" type="text/css"  /><script src="https://statics.soniccdn.com/js/jquery-3.6.1.min.63610b33d8ca0.js"></script><script defer src="https://statics.soniccdn.com/js/jquery-ui.min.63610b33d8ca0.js"></script><script defer src="https://statics.soniccdn.com/js/common.63610b33d8ca0.js"></script><script defer src="https://statics.soniccdn.com/js/general.63610b33d8ca0.js"></script><script defer src="https://statics.soniccdn.com/js/comments-list.63610b33d8ca0.js"></script><script defer src="https://statics.soniccdn.com/js/ad-view.63610b33d8ca0.js"></script>
+	<script>
+		googletag.cmd.push(function() {
+
+				
+				// Mapeo banners desktop/tablet landscape
+		var Hispasonic_Resto_980x90 = googletag.sizeMapping().
+				addSize([0, 0], []).
+				addSize([1000, 200], [[980,90], [970,90], [1000,200]]).
+				build();
+				 
+		
+		
+				
+				// Mapeo banners desktop/tablet landscape
+		var Hispasonic_Resto_300x250 = googletag.sizeMapping().
+				addSize([0, 0], []).
+				addSize([1000, 200], [[300,250], [300,600]]).
+				build();
+				 
+		
+		
+				
+				 
+				// Mapeo banners móvil
+		var Hispasonic_Mobile_Resto_320x50 = googletag.sizeMapping().
+			addSize([0, 0], []).
+			addSize([300, 200], [[320,50]]).
+			addSize([1000, 200], []).
+			build();
+		
+		
+				
+				 
+				// Mapeo banners móvil
+		var Hispasonic_Mobile_Resto_300x250 = googletag.sizeMapping().
+			addSize([0, 0], []).
+			addSize([300, 200], [[300,250], [300,600]]).
+			addSize([1000, 200], []).
+			build();
+		
+		
+		
+		// GPT slots
+		var gptAdSlots = [];
+
+						gptAdSlots[0] = googletag.defineSlot('/1050510/Hispasonic_Resto_980x90', [[980,90], [970,90], [1000,200]], 'banner_980x90').
+		  defineSizeMapping(Hispasonic_Resto_980x90).
+		  addService(googletag.pubads());
+				gptAdSlots[1] = googletag.defineSlot('/1050510/Hispasonic_Resto_300x250', [[300,250], [300,600]], 'banner_300x250').
+		  defineSizeMapping(Hispasonic_Resto_300x250).
+		  addService(googletag.pubads());
+				gptAdSlots[2] = googletag.defineSlot('/1050510/Hispasonic_Mobile_Resto_320x50', [[320,50]], 'banner_320x50_mobile').
+		  defineSizeMapping(Hispasonic_Mobile_Resto_320x50).
+		  addService(googletag.pubads());
+				gptAdSlots[3] = googletag.defineSlot('/1050510/Hispasonic_Mobile_Resto_300x250', [[300,250], [300,600]], 'banner_300x250_mobile').
+		  defineSizeMapping(Hispasonic_Mobile_Resto_300x250).
+		  addService(googletag.pubads());
+		
+				googletag.pubads().setTargeting("channel", "5");
+		
+		
+        googletag.pubads().enableLazyLoad({
+          fetchMarginPercent: 300,
+          renderMarginPercent: 100,
+          mobileScaling: 2.0
+        });
+
+		googletag.enableServices();
+		});
+	</script>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5VRVTN"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
+		<!-- Google Analytics: dimensión personalizada de categoría -->
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	dataLayer.push({
+	'channel': '5'
+	});
+	</script>
+	<!-- End Google Analytics -->
+	
+	
+	
+	<div id="page-container">
+				<header id="header">
+			<div class="header-content">
+				<div id="menu-button" class="header-icon menu-icon"></div>
+								<div class="logo"><a href="/"><img src="https://statics.soniccdn.com/images/logo-new.png" alt="Hispasonic"></a></div>
+												<div class="anonymous-options">
+					  <a href="/login" rel="nofollow" class="btn-login login">Accede</a>
+					  <a href="/registro" rel="nofollow" class="btn-register">Regístrate</a>
+				</div>
+				<div class="login header-icon login-icon"></div>
+								<nav>
+				<ul class="nav-bar-menus">
+					<li><a href="/revista">Revista</a></li>
+					<li><a href="/foros">Foros</a></li>
+					<li><a href="/musica">Música</a></li>
+					<li><a href="/productos">Equipo</a></li>
+					<li class="active"><a href="/anuncios">Mercasonic</a></li>
+				</ul>
+				</nav>
+			</div>
+		</header>
+				<div id="subheader">
+			<div class="subheader-content">
+				<div class="search-container">
+	<form action="/index.php" method="get">
+		<button type="submit" aria-label="Buscar" class="btn icon icon-search"></button>
+		<input type="hidden" name="controller" value="home">
+		<input type="hidden" name="action" value="search_home">
+		<div class="input-container">
+			<input type="text" name="q" value="" class="query" placeholder="Buscar en Hispasonic">
+		</div>
+	</form>
+</div>
+<nav>
+<ul>
+	<li><a href="/anuncios/todo">Todos los anuncios</a></li>	
+	<li><a href="/anuncios/todo/f/compra-protegida">Sólo compras protegidas</a></li>
+	</ul>
+</nav>			</div>
+		</div>
+		
+		
+				<div id="banner_980x90" class="banner-top" style="min-height: 90px;  min-width: 1000px;">
+		<script>
+			googletag.cmd.push(function() { googletag.display('banner_980x90'); });
+		</script>
+	</div>
+			<main>
+				<div id="body">
+					<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Product",
+    "name": "Maleta teclado de 5 octavas",
+    "description": "Vendo maleta para teclado de 5 octavas, usada pero en buen estado.
+
+Dimensiones: 
+- exterior: 107x39x16
+- interior:  103x33x13
+
+Puedo enviar, pero los gastos de envio corren a cargo del comprador.
+
+saludos
+Ramon",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://mercasonic.soniccdn.com/sda/640/3431/3828431.jpg"
+    },
+    "mainEntityOfPage": "https://www.hispasonic.com/anuncios/maleta-teclado-5-octavas/1023341",
+
+    "offers": {
+      "@type": "Offer",
+      "url": "https://example.com/anvil",
+      "priceCurrency": "EUR",
+	    "price": "75",
+      "itemCondition": "https://schema.org/UsedCondition",
+            "availability": "https://schema.org/InStock",
+    		    "areaServed": "Barcelona", 
+	    "availabilityStarts": "2022-01-04T09:49:49",
+	    "availabilityEnds": "2022-12-09T09:46:26",
+		    "seller": {
+		      "@type": "Person",
+		      "name": "mon8169"
+		    }
+		  }
+  }
+</script>
+<ul class="breadcrumb breadcrumb-dark" itemscope itemtype="http://schema.org/BreadcrumbList">
+	<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+		<a href="/anuncios" itemprop="item"><span itemprop="name">Mercasonic</span></a>
+		<meta itemprop="position" content="1" />
+	</li>
+				<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+			<a href="/anuncios/compraventa" itemprop="item"><span itemprop="name">Compraventa</span></a>
+			<meta itemprop="position" content="2" />
+		</li>
+					<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+			<a href="/anuncios/teclados-sintetizadores" itemprop="item"><span itemprop="name">Teclados y sintetizadores</span></a>
+			<meta itemprop="position" content="3" />
+		</li>
+			</ul>
+<div id="search_container" class="search-container with-selector">
+	<form action="/index.php?controller=ad&amp;action=set_filters" data-url-suggestions="/index.php?controller=ad&amp;action=search_ad" method="post">
+		<button type="submit" aria-label="Buscar" class="btn icon icon-search"></button>
+				<div class="selector">
+			<input type="hidden" name="category_id" value="">
+			<div class="current">Todas las categorías<span></span></div>
+			<ul>
+				<li data-category-id="0">Todas las categorías</li>
+				<li data-category-id="2">Teclados y sintetizadores</li>
+			</ul>
+		</div>
+				<div class="input-container"><input type="text" name="q" value="" placeholder="Busca un anuncio" class="query" autocomplete="off"></div>
+	</form>
+</div>
+<div id="search_results" class="search-results"></div>
+<script>
+	$(document).ready(function(){
+		var timeOut = undefined;
+		var searchContainer = $('#search_container');
+		var searchResults = $('#search_results');
+
+		$('.query', searchContainer).keyup(function(e){
+			e.preventDefault();
+
+			if(timeOut !== undefined){
+				clearTimeout(timeOut);
+			}
+
+			if($(this).val().length > 2){
+				timeOut = setTimeout(update, 400);
+			}
+		});
+
+		$('body').click(function(e){
+			var target = $(e.target);
+			if(!target.is(searchResults) && !target.parents().is(searchResults)) {
+				$(searchResults).hide();
+			}
+		});
+
+		(function($){
+
+			var opened = false;
+
+			var selector = $('.selector', searchContainer);
+
+			selector.click(function(e){
+				if(opened == false){
+					var pos = selector.position();
+					var width = selector.outerWidth();
+					var height = selector.outerHeight();
+					var ul = $('ul', selector);
+					ul.css({
+						position: 'absolute',
+						top: pos.top + height,
+						left: pos.left
+					});
+					ul.show();
+					opened = true;
+				}else{
+					$('ul', selector).hide();
+					opened = false;
+				}
+			});
+
+			$('body').click(function(e){
+				var target = $(e.target);
+				if(!target.is(selector) && !target.parents().is(selector)) {
+					$('ul', selector).hide();
+					opened = false;
+				}
+			});
+
+
+			$('.selector li', searchContainer).click(function(e){
+				$('ul', selector).hide();
+				$('div', selector).html($(this).html() + '<span></span>');
+				$('input', selector).val($(this).data('category-id'));
+			});
+		})(jQuery);
+
+		function update(){
+			var pos = $('.input-container', searchContainer).position();
+			var top = pos.top + $('.input-container', searchContainer).outerHeight();
+			var left = pos.left;
+			var width = $('.input-container', searchContainer).width();
+			var selector = $('.selector', searchContainer)
+			if(selector.length > 0){
+				left += selector.outerWidth();
+			}
+
+			searchResults.css({
+				'position': 'absolute',
+				'top': top + 'px',
+				'left': left + 'px',
+				'width': width + 'px'
+			});
+
+			searchResults.html('<img src="https://statics.soniccdn.com/images/loading.gif" width="32" height="32" style="width: 32px; height: 32px; margin: 20px auto;">');
+			searchResults.show();
+
+			$.ajax({
+				type: 'POST',
+				url: $('form', searchContainer).data('url-suggestions'),
+				data: $('form', searchContainer).serialize(),
+				dataType: 'json',
+				success: function(response){
+					searchResults.html(response.html);
+				}
+			});
+		}
+	});
+</script><div class="layout ">
+	<div class="content item-options" data-item-id="1023341" data-status="active" data-seconds-renew="2653240">
+
+	
+	
+				<h1 class="title">Maleta teclado de 5 octavas</h1>
+			<div id="banner_300x250_mobile" class="banner-mobile" style="min-height: 250px;  min-width: 300px;">
+		<script>
+			googletag.cmd.push(function() { googletag.display('banner_300x250_mobile'); });
+		</script>
+	</div>
+		<div class="layout-simple">
+			<div class="grid grid-gutter">
+				<div class="col-lg-7">
+					<div>Por <a href="/usuarios/mon8169" class="user-link">mon8169</a>  el 04/01/2022 en <strong>Barcelona</strong></div>
+										<div class="expira">Expiración: 09/12/2022 | Visto 380 veces</div>
+
+					
+				</div>
+				<div class="col-lg-5">
+										<div class="ad-price">75  €</div>
+											
+					
+
+				</div>
+			</div>
+									
+		    
+									<div class="ad-images">
+						<div class="full-image">
+							<a href="https://mercasonic.soniccdn.com/sda/large/3431/3828431.jpg"><img src="https://mercasonic.soniccdn.com/sda/640/3431/3828431.jpg" alt="Maleta teclado de 5 octavas"/></a>
+						</div>
+						<ul>
+															<li><a href="https://mercasonic.soniccdn.com/sda/large/3431/3828431.jpg" rel="https://mercasonic.soniccdn.com/sda/640/3431/3828431.jpg"><img src="https://mercasonic.soniccdn.com/sda/64/3431/3828431.jpg"  class="selected"  alt="Maleta teclado de 5 octavas" /></a></li>
+															<li><a href="https://mercasonic.soniccdn.com/sda/large/3433/3828433.jpg" rel="https://mercasonic.soniccdn.com/sda/640/3433/3828433.jpg"><img src="https://mercasonic.soniccdn.com/sda/64/3433/3828433.jpg"  alt="Maleta teclado de 5 octavas" /></a></li>
+													</ul>
+					</div>
+							<div class="msonic-description richtext" itemprop="description">Vendo maleta para teclado de 5 octavas, usada pero en buen estado.<br>
+<br>
+Dimensiones:<br>
+- exterior: 107x39x16<br>
+- interior:  103x33x13<br>
+<br>
+Puedo enviar, pero los gastos de envio corren a cargo del comprador.<br>
+<br>
+saludos<br>
+Ramon
+			</div>
+
+			
+			
+
+				<div class="alert display-table" style="margin-top: 20px;">
+				<div style="font-size: 1.25em;">Características declaradas por el vendedor</div>
+																				<p>Estado: <span class="bold">Muy bueno</span></p>
+																				
+													
+				<p>Color: <span class="bold">Negro</span></p>
+												</div>
+
+						
+			
+			
+			<button id="follow-ad" data-ad-id="1023341" class="btn icon icon-follow" data-value="false">Seguir este anuncio</button>
+			<button id="report-content-ads-1023341" class="btn icon icon-report report-content">Denunciar</button>
+		</div>
+
+	<div style="margin: 20px 19px 40px 19px;"><button type="submit" class="btn icon icon-message btn-big btn-full-width login" id="msg-direct">Contactar con el anunciante</button></div>
+
+		
+
+								
+					<div class="block">
+	<div class="header">Ofertas<span class="right"><a class="btn" style="display: inline;" href="/ofertas">Ver todas</a></span></div>
+	<div class="body" style="border-bottom: 0px;">
+		<div style="overflow: hidden;">
+			<ul class="grid-flex grid-gutter grid-3-col grid-xs-1-col">
+							<li class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+					<div class="block offer">
+						<div class="body">
+							<a href="/index.php?controller=offer&action=click&offer_id=74"><img src="https://statics.soniccdn.com/images/lazy-placeholder.jpg" class="lazy" data-src="https://mercasonic.soniccdn.com/offers/300/000/74.jpg" class="offersblock-img" alt="Presonus StudioLive 16.0.2 USB"></a>
+							<div class="offersblock-description">Presonus StudioLive 16.0.2 USB</div>
+							<div class="offersblock-buttons-row">
+								<div class="offersblock-price-div">
+									<a href="/index.php?controller=offer&action=click&offer_id=74">
+										<div class="offersblock-price">888 &euro;</div>
+									</a>
+								</div>
+								<div class="offersblock-comprar-div">
+								<a href="/index.php?controller=offer&action=click&offer_id=74">
+									<div class="offersblock-comprar">Ver oferta</div>
+								</a>
+							</div>
+							</div>
+						</div>
+					</div>
+				</li>
+							<li class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+					<div class="block offer">
+						<div class="body">
+							<a href="/index.php?controller=offer&action=click&offer_id=62"><img src="https://statics.soniccdn.com/images/lazy-placeholder.jpg" class="lazy" data-src="https://mercasonic.soniccdn.com/offers/300/000/62.jpg" class="offersblock-img" alt="Arturia Minilab MKII + plugins"></a>
+							<div class="offersblock-description">Arturia Minilab MKII + plugins</div>
+							<div class="offersblock-buttons-row">
+								<div class="offersblock-price-div">
+									<a href="/index.php?controller=offer&action=click&offer_id=62">
+										<div class="offersblock-price">87 &euro;</div>
+									</a>
+								</div>
+								<div class="offersblock-comprar-div">
+								<a href="/index.php?controller=offer&action=click&offer_id=62">
+									<div class="offersblock-comprar">Ver oferta</div>
+								</a>
+							</div>
+							</div>
+						</div>
+					</div>
+				</li>
+							<li class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+					<div class="block offer">
+						<div class="body">
+							<a href="/index.php?controller=offer&action=click&offer_id=121"><img src="https://statics.soniccdn.com/images/lazy-placeholder.jpg" class="lazy" data-src="https://mercasonic.soniccdn.com/offers/300/000/121.jpg" class="offersblock-img" alt="Sphere L22 GRATIS con cualquier Apollo X de Universal Audio"></a>
+							<div class="offersblock-description">Sphere L22 GRATIS con cualquier Apollo X de Universal Audio</div>
+							<div class="offersblock-buttons-row">
+								<div class="offersblock-price-div">
+									<a href="/index.php?controller=offer&action=click&offer_id=121">
+										<div class="offersblock-price">Varios</div>
+									</a>
+								</div>
+								<div class="offersblock-comprar-div">
+								<a href="/index.php?controller=offer&action=click&offer_id=121">
+									<div class="offersblock-comprar">Ver oferta</div>
+								</a>
+							</div>
+							</div>
+						</div>
+					</div>
+				</li>
+						</ul>
+		</div>
+	</div>
+</div>
+		
+		<div class="block block-dark">
+	<div class="header">CONSULTAS SOBRE EL ANUNCIO</div>
+	<div class="body">
+				
+		<div id="comments" data-content-id="1023341" data-content-table="ads">
+		</div>
+		<div class="alert alert-error">
+	<p><a href="/registro" rel="nofollow">Regístrate</a> o <a href="/login" rel="nofollow" class="login">identifícate</a> para poder comentar</p>
+</div>
+	</div>
+</div>
+	</div>
+	<div class="sidebar">
+			<div id="banner_300x250" class="banner" style="min-width: 300px; min-height: 250px;">
+		<script>
+			googletag.cmd.push(function() { googletag.display('banner_300x250'); });
+		</script>
+	</div>
+		<script>
+	var userId = 95791;
+	var user = 'mon8169';
+	var name = 'mon8169';
+
+	Hispasonic.getJS('profile');
+</script>
+<div id="block" class="block">
+	<div class="header">Usuario</div>
+	<div class="body">
+		<div class="clearfix" style="margin-bottom: 10px;">
+			<div style="float: left; width: 80px;"><a href="/usuarios/mon8169"><img src="https://users.soniccdn.com/images/130/95791_47100.jpg" alt="mon8169" style="max-width: 100%;"></a></div>
+			<div style="margin-left: 100px; ">
+				<div style="margin-bottom: 5px;"><a href="/usuarios/mon8169" class="user-link" style="font-size: 16px; font-weight: bold;">mon8169</a></div>
+												<div class="profile-buttons" style="margin: 8px 0px 0px 0px;">
+					<button id="profile" class="btn only-icon icon-profile jtip" data-help="Ver perfil"></button>
+					<button id="send-message" class="btn only-icon icon icon-message jtip" data-help="Enviar mensaje"></button>
+					<button id="follow-user" class="btn only-icon icon icon-follow jtip" data-user-id="95791" data-value="false" data-help="Seguir usuario"></button>
+				</div>
+							</div>
+		</div>
+
+				<div style="margin-top: 10px;">
+				<div class="box-counters">
+					<div class="grid">
+						<div class="col-lg-6 cell"><span>Registrado</span> 02/07/2009</div>
+																			<div class="col-lg-6 cell"><span>Comentarios</span>1</div>
+																																																								<div class="col-lg-6 cell"><span>Posts en foros</span>7</div>
+																																<div class="col-lg-6 cell"><span>Anuncios</span><a href="/usuarios/mon8169/anuncios">1</a></div>
+																																																												</div>
+				</div>
+		</div>
+			</div>
+</div>					<div class="block block-related-ads">
+		<div class="header">Otros anuncios que te pueden interesar</div>
+		<div class="body">
+			<ul class="separators" style="padding-inline-start: 0px;">
+						<li>
+				<div style="float: left; width: 58px;">
+					<a href="/anuncios/maleta-flight-case-estuche-teclado/1058250"><img src="https://statics.soniccdn.com/images/lazy-placeholder.jpg" class="lazy" data-src="https://mercasonic.soniccdn.com/sda/64/3008/3993008.jpg" style="border: 4px solid #FFFFFF;" width="50" height="50" alt="Maleta FLIGHT-CASE - Estuche para teclado"></a>
+				</div>
+				<div style="margin-left: 68px;">
+				<div><a href="/anuncios/maleta-flight-case-estuche-teclado/1058250" style="font-weight:bold;">Maleta FLIGHT-CASE - Estuche para teclado</a> en Girona</div>
+								<div style="margin-top: 5px;"><span class="precios">95 €</span></div>
+								</div>
+			</li>
+						<li>
+				<div style="float: left; width: 58px;">
+					<a href="/anuncios/funda-teclado-5-octavas/976036"><img src="https://statics.soniccdn.com/images/lazy-placeholder.jpg" class="lazy" data-src="https://mercasonic.soniccdn.com/sda/64/2616/3607616.jpg" style="border: 4px solid #FFFFFF;" width="50" height="50" alt="Funda para teclado de 5 octavas"></a>
+				</div>
+				<div style="margin-left: 68px;">
+				<div><a href="/anuncios/funda-teclado-5-octavas/976036" style="font-weight:bold;">Funda para teclado de 5 octavas</a> en Madrid</div>
+								<div style="margin-top: 5px;"><span class="precios">35 €</span></div>
+								</div>
+			</li>
+						<li>
+				<div style="float: left; width: 58px;">
+					<a href="/anuncios/teclado-nord-wave-2/1055810"><img src="https://statics.soniccdn.com/images/lazy-placeholder.jpg" class="lazy" data-src="https://mercasonic.soniccdn.com/sda/64/1488/3981488.jpg" style="border: 4px solid #FFFFFF;" width="50" height="50" alt="Teclado Nord Wave 2"></a>
+				</div>
+				<div style="margin-left: 68px;">
+				<div><a href="/anuncios/teclado-nord-wave-2/1055810" style="font-weight:bold;">Teclado Nord Wave 2</a> en Barcelona</div>
+								<div style="margin-top: 5px;"><span class="precios">1750 €</span></div>
+								</div>
+			</li>
+						<li>
+				<div style="float: left; width: 58px;">
+					<a href="/anuncios/teclado-yamaha-tyros-5-75-fl1024-flash/1068075"><img src="https://statics.soniccdn.com/images/lazy-placeholder.jpg" class="lazy" data-src="https://mercasonic.soniccdn.com/sda/64/4858/4039858.jpg" style="border: 4px solid #FFFFFF;" width="50" height="50" alt="Teclado Yamaha Tyros 5/75  +FL1024 FLASH."></a>
+				</div>
+				<div style="margin-left: 68px;">
+				<div><a href="/anuncios/teclado-yamaha-tyros-5-75-fl1024-flash/1068075" style="font-weight:bold;">Teclado Yamaha Tyros 5/75  +FL1024 FLASH.</a> en Castellón</div>
+								<div style="margin-top: 5px;"><span class="precios">2300 €</span></div>
+								</div>
+			</li>
+						<li>
+				<div style="float: left; width: 58px;">
+					<a href="/anuncios/pie-teclado-2-pisos-km-omega-1-2-teclados/1063418"><img src="https://statics.soniccdn.com/images/lazy-placeholder.jpg" class="lazy" data-src="https://mercasonic.soniccdn.com/sda/64/2975/4017975.jpg" style="border: 4px solid #FFFFFF;" width="50" height="50" alt="soporte pie de teclado 2 pisos K&amp;M omega. 1 o 2 teclados"></a>
+				</div>
+				<div style="margin-left: 68px;">
+				<div><a href="/anuncios/pie-teclado-2-pisos-km-omega-1-2-teclados/1063418" style="font-weight:bold;">soporte pie de teclado 2 pisos K&amp;M omega. 1 o 2 teclados</a> en Madrid</div>
+								<div style="margin-top: 5px;"><span class="precios">120 €</span></div>
+								</div>
+			</li>
+						</ul>
+		</div>
+	</div>
+					</div>
+</div>
+<script>
+$(document).ready(function(){
+    $('.banner-bottom-close').on('click', function() {
+        $('.banner-bottom-container').remove();
+    });
+});
+</script>
+<div class="banner-bottom-container">
+	<button class="banner-bottom-close">X</button>
+	<div id="banner_320x50_mobile" class="banner-bottom clearfix" style="display: block; min-width: 320px; min-height: 50px;">
+		<div>
+			<script>
+				googletag.cmd.push(function() { googletag.display('banner_320x50_mobile'); });
+			</script>
+		</div>
+	</div>
+</div>
+
+</div>
+</main>
+<footer id="footer">
+	<div class="prefooter">
+		<div class="footer-content">
+			<span class="footer-links">© 2022 <strong>Hispasonic</strong> <a href="/quienes-somos">Quiénes somos</a> <a href="/normas-foros">Normas foros</a> <a href="/normas-mercasonic">Normas Mercasonic</a> <a href="/ayuda">Ayuda</a> <a href="/aviso-legal">Aviso legal</a> <a href="/privacidad">Privacidad</a> <a href="/cookies">Cookies</a> <a href="/contacto"><strong>Contacto</strong></a></span>
+		</div>
+	</div>
+	<div class="footer-content">
+		<div class="grid grid-gutter">
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<div class="big-icon-container">
+					<a href="https://www.facebook.com/hispasonic" aria-label="Facebook" class="facebook-big-icon"><span>Facebook</span></a>
+				</div>
+				<div class="big-icon-container">
+					<a href="https://twitter.com/hispasonic" aria-label="Twitter" class="twitter-big-icon"><span>Twitter</span></a>
+				</div>
+				<div class="big-icon-container">
+					<a href="https://www.instagram.com/hispasonic/" aria-label="Instagram" class="instagram-big-icon"><span>Instagram</span></a>
+				</div>
+				<div class="big-icon-container">
+					<a href="https://www.youtube.com/hispasonic" aria-label="Youtube" class="youtube-big-icon"><span>Youtube</span></a>
+				</div>
+				<div class="big-icon-container">
+					<a href="/index.php?controller=home&amp;action=rss" aria-label="RSS" class="rss-big-icon"><span>RSS</span></a>
+				</div>
+				<div class="big-icon-container">
+					<a href="/index.php?controller=home&amp;action=newsletters" aria-label="Newsletters" class="mail-big-icon"><span>Mail</span></a>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<div class="sonicnetwork">
+								</div>
+			</div>
+		</div>
+	</div>
+</footer>
+</div>
+<div id="page-menu">
+	<div class="content">
+					<div class="acceso">
+				<div class="buttons-container"><a href="/login" class="btn btn-primary btn-full-width login">Acceder</a></div>
+				<div class="buttons-container"><a href="/registro" class="btn btn-primary btn-full-width">Regístrate</a></div>
+			</div>
+				<div class="search-container-mobile">
+	<form action="/index.php" method="get">
+		<button type="submit" aria-label="Buscar" class="btn icon icon-search"></button>
+		<input type="hidden" name="controller" value="home">
+		<input type="hidden" name="action" value="search_home">
+		<div class="input-container">
+			<input type="text" name="q" value="" class="query" placeholder="Buscar en Hispasonic">
+		</div>
+	</form>
+</div>
+
+<nav>
+<ul class="shortcuts">
+	<li><a href="/actividad">Actividad</a></li>
+</ul>
+<ul class="nav-bar-menus">
+	<li>
+		<a href="/revista">Revista</a>
+		<ul>
+			<li><a href="/revista">Todos los contenidos</a></li>
+						<li><a href="/categorias/informatica-musical">Informática musical</a></li>
+						<li><a href="/categorias/grabacion">Grabación</a></li>
+						<li><a href="/categorias/dj">DJ</a></li>
+						<li><a href="/categorias/sintetizadores">Sintetizadores</a></li>
+						<li><a href="/categorias/sonido-en-vivo">Sonido en vivo</a></li>
+						<li><a href="/categorias/sonido-imagen">Audiovisual</a></li>
+						<li><a href="/categorias/magacin">Magacín</a></li>
+						<li><a href="/videoshd">En vídeo</a></li>
+			<li><a href="/freeware">Freeware</a></li>
+			<li class="separator">Patrocinado</li>
+			<li><a href="/publirreportajes">Publirreportajes</a></li>
+		</ul>
+	</li>
+	<li>
+		<a href="/foros">Foros</a>
+		<ul>
+			<li><a href="/foros/ultimos-posts">Últimos posts</a></li>
+						<li><a href="/foros">Índice</a></li>
+						</ul>
+	</li>
+	<li>
+		<a href="/musica">Música</a>
+		<ul>
+			<li><a href="/musica">Temas</a></li>
+					</ul>
+	</li>
+	<li>
+		<a href="/productos">Equipo</a>
+		<ul>
+			<li><a href="/productos">Índice</a></li>
+			<li><a href="/productos/todo">Productos A-Z</a></li>
+			<li><a href="/productos/ultimas-opiniones">Últimas opiniones</a></li>
+		</ul>
+	</li>
+	<li>
+		<a href="/anuncios">Mercasonic</a>
+		<ul>
+			<li><a href="/anuncios">Índice</a></li>
+			<li><a href="/anuncios/todo">Todos los anuncios</a></li>
+			<li><a href="/anuncios/todo/f/compra-protegida">Sólo compras protegidas</a></li>
+					</ul>
+	</li>
+</ul>
+</nav>			</div>
+</div>
+<script>
+function youtubelazy() {
+
+    var youtube = document.querySelectorAll( ".youtube" );
+    
+    for (var i = 0; i < youtube.length; i++) {
+        
+        var source = "https://img.youtube.com/vi/"+ youtube[i].dataset.embed +"/hqdefault.jpg";
+        
+        var image = new Image();
+                image.src = source;
+                image.setAttribute( "alt", "Vídeo de Youtube" );
+                image.addEventListener( "load", function() {
+                    youtube[ i ].appendChild( image );
+                }( i ) );
+        
+                youtube[i].addEventListener( "click", function() {
+
+                    var iframe = document.createElement( "iframe" );
+
+                            iframe.setAttribute( "frameborder", "0" );
+                            iframe.setAttribute( "allowfullscreen", "" );
+                            iframe.setAttribute( "src", "https://www.youtube.com/embed/"+ this.dataset.embed +"?rel=0&showinfo=0&autoplay=1" );
+
+                            this.innerHTML = "";
+                            this.appendChild( iframe );
+                } );    
+    };
+    
+};
+youtubelazy();
+</script>
+</body>
+</html>
