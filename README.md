@@ -4,7 +4,7 @@
 
 ## Descripción del proyecto
 
-Este proyecto es muy especial para mí, ya que combina dos de mis pasiones: la música electrónica y los instrumentos musicales y el análisis de datos.
+Este proyecto es muy especial para mí, ya que combina dos de mis pasiones: la música electrónica, los instrumentos musicales y el análisis de datos.
 
 Como apasionado de los instrumentos electrónicos pensé que sería interesante recopilar información de la venta de instrumentos de segunda mano de la web de hispasonic y ver que conocimiento era capáz de extraer a modo de reto personal, así que me puse manos a la obra: 
 
