@@ -11,6 +11,6 @@ Como apasionado de los instrumentos electrónicos pensé que sería interesante 
 
 El proyecto se compone de varias partes:
 
-- [from_web_to_csv](https://github.com/albertjimrod/personal_proj_hispasonic/blob/f775538b852e3e21d765cc5fdd147b3227cadfa4/from_web_to_csv.ipynb) : Proceso que he seguí para la **captura** y **limpieza** de datos de la página web de hispasonic Desde cero, fuí avanzando y comprendiendo que camino debía seguir, descubriendo que biblioteca de funciones y que estratégias que debía implementar para condensar esa información en un archivo `*.csv`.
+- [from_web_to_csv](https://github.com/albertjimrod/personal_proj_hispasonic/blob/f775538b852e3e21d765cc5fdd147b3227cadfa4/from_web_to_csv.ipynb) : Proceso que he seguí para la **captura** y **limpieza** de datos de la página web de hispasonic desde cero, fuí avanzando y comprendiendo que camino debía seguir, descubriendo que biblioteca de funciones y que estratégias que debía implementar para condensar esa información de los anuncios en un archivo `*.csv`.
 
 - [from_csv_to_PostgreSQL](https://github.com/albertjimrod/personal_proj_hispasonic/blob/1a4a9744340845bcae42003bf9c178954f9c4e1d/from_csv_to_PostgreSQL.ipynb) Este projecto surgió como la necesidad natural de gestionar los datos de manera mas "**real**". En el explico los pasos que van desde la instalación de la base de datos **PostgreSQL** en una máquina con sistema opertivo Linux hasta la carga de los archivos  `.csv` que había ido recopilando en la base de datos.
