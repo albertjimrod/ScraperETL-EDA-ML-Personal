@@ -1,6 +1,5 @@
 # Personal project: hispasonic.
 
-<img src="READ.jpeg" alt="README" style="width:200px;"/>
 
 ## Project Description
 
