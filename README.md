@@ -1,6 +1,6 @@
 # Personal project: hispasonic.
 
-[![Texto alternativo]([2 hand synths](https://support.musicgateway.com/wp-content/uploads/2021/04/Copy-of-800-x-500-Blog-Post-5-4.png)){width=250px}](https://support.musicgateway.com/wp-content/uploads/2021/04/Copy-of-800-x-500-Blog-Post-5-4.png))
+<img src="https://support.musicgateway.com/wp-content/uploads/2021/04/Copy-of-800-x-500-Blog-Post-5-4.png" alt="2hand" style="width:250px;"/>
 
 
 ## Project Description
