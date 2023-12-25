@@ -1,0 +1,68 @@
+Define claramente tu objetivo:
+
+Cuales son los anuncios mas antiguos que hay hasta la fecha?
+Cuantos de ellos hay?
+Que instrumentos se venden en esos anuncios
+Que precio tienen?
+Hay un lugar que destaque?
+Por precio? Por visualizaciones
+
+
+Hay algun anuncio que se repita en el tiempo?
+
+
+De donde son la mayoría de anuncios?
+
+Hay alguna relación entre un anuncio que no se vende y el precio que este tiene de venta? 
+Se vendería mejor en otro sitio?
+Las ciudades hacen de cluster en relación al precio? 
+- Es decir si por vender un sinte en un lugar estás limitado en el precio o en cambio por estar en una de las ciudades principales puedes subir el precio?
+
+Cuales son los modelos de máquinas que mas se repiten?
+Cual es el precio 
+Cual es el precio medio de venta en las ciudades (tendré que tener en cuenta el tema de los diferentes tipos de medias que hay)
+
+
+Es posible anticipar la venta en funcion de la fecha de los anuncios?
+
+Existe un buen momento para la venta?
+Si Existe ese momento es necesario que el producto cumpla algo que facilite la venta?
+
+Hay vendedores "reincidentes"?
+Donde estan?
+Que tipo de producto venden?
+
+
+Existe un numero de veces en las que un articulo es simplemente curiosidad y cuando pasa a ser interes?
+
+###
+
+# Determinar cuando es un buen momento para la venta:
+
+En realidad, un buen momento para la venta no solo se trata de la ausencia de una sobreoferta. 
+
+Si bien es cierto que una sobreoferta puede hacer que sea más difícil vender un producto, también es importante considerar otros factores.
+
+Por ejemplo, la demanda del producto es crucial. A veces, incluso cuando hay una sobreoferta, si la demanda sigue siendo alta, aún podría ser un buen momento para vender, especialmente si el producto es altamente deseado por los consumidores.
+
+Además, otros elementos como la temporada, las tendencias del mercado, la competencia y las estrategias de marketing también pueden influir en el mejor momento para vender un producto. Así que, aunque una sobreoferta puede ser un factor a considerar, no es el único determinante para decidir cuándo vender.
+
+---
+
+Hay productos con sobreoferta?
+
+importante: existe demanda?, hay una temporada asociada?, hay una tendencia?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
