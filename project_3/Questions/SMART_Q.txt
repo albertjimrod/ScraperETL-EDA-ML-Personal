@@ -54,6 +54,9 @@ Hay productos con sobreoferta?
 importante: existe demanda?, hay una temporada asociada?, hay una tendencia?
 
 
+Cuales son los anuncios que estan proximos a expirar?
+
+
 
 
 
