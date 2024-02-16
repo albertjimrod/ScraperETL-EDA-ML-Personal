@@ -5,11 +5,7 @@
 
 ## Project Description
 
-
-This is the first part of the project:
-
-
-
+<br>
 
 ### Data Capture and Cleaning Process Overview
 
@@ -39,7 +35,9 @@ By following a systematic approach to data capture and cleaning, the project suc
 
 <br>
 
-- [project_2 from_csv_database (PostgreSQL)](https://github.com/albertjimrod/personal_proj_hispasonic/blob/main/project_2/02_from_csv_to_PostgreSQL.ipynb) :
+### From `csv` to database `PostgreSQL`
+
+## [project_2 from_csv_database (PostgreSQL)](https://github.com/albertjimrod/personal_proj_hispasonic/blob/main/project_2/02_from_csv_to_PostgreSQL.ipynb) :
 
 ### Project Overview
 
@@ -66,7 +64,9 @@ By loading the dataset into a PostgreSQL database, we establish a solid foundati
 
 <br>
 
-- [project_3 General guidelines in relation to the data obtained](https://github.com/albertjimrod/personal_proj_hispasonic/blob/main/project_3/Questions/SMART_Q.md):
+###  SMART Questions:
+
+## [project_3 General guidelines in relation to the data obtained](https://github.com/albertjimrod/personal_proj_hispasonic/blob/main/project_3/Questions/SMART_Q.md):
 
 These are the points that will be touched on in the process:
 
@@ -107,19 +107,19 @@ These are the points that will be touched on in the process:
    - Can the probability of sale be predicted based on the product description?
    - Is there any relationship between the quality of the product description and its success in sales?
   
-<br>
+
 
 ### Hypothesis Development
 
 After addressing these questions, the next step is to formulate hypotheses based on the insights gained from the data analysis. These hypotheses will guide further experimentation, testing, and decision-making in your project.
 
---- 
-
-Feel free to adjust or expand upon this as needed for your README document!
+<br>
 
 
-- [project_4 ETL (Extract Transform Load) Hispasonic](https://github.com/albertjimrod/personal_proj_hispasonic/blob/main/project_3/Questions/SMART_Q.md):
-  **ETL (Extract, Transform, Load): An Introduction**
+###  **ETL (Extract, Transform, Load): An Introduction**
+
+## [project_4 ETL (Extract Transform Load) Hispasonic](https://github.com/albertjimrod/personal_proj_hispasonic/blob/main/project_3/Questions/SMART_Q.md):
+ 
 
   ETL, which stands for Extract, Transform, Load, is a process commonly used in data warehousing and analytics to prepare and consolidate data from various sources for analysis and reporting purposes.
 
