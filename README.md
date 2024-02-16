@@ -133,7 +133,9 @@ After addressing these questions, the next step is to formulate hypotheses based
 
 <br>
 
--[project_5 EDA]()
+###  **EDA (Exploratory Data Analysis)**
+
+## [project_5 EDA](https://github.com/albertjimrod/personal_proj_hispasonic/blob/main/project_5/EDA_hispasonic.ipynb)
 
 
 Exploratory Data Analysis (EDA) is a crucial preliminary step in the data analysis process, where the main objective is to gain insights and understand the underlying patterns, trends, and relationships within a dataset. It involves systematically examining and visualizing the data to uncover interesting features, detect anomalies, and formulate hypotheses for further investigation.
