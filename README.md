@@ -118,7 +118,7 @@ After addressing these questions, the next step is to formulate hypotheses based
 
 ###  **ETL (Extract, Transform, Load): An Introduction**
 
-## [project_4 ETL (Extract Transform Load) Hispasonic](https://github.com/albertjimrod/personal_proj_hispasonic/blob/main/project_3/Questions/SMART_Q.md):
+## [project_4 ETL (Extract Transform Load) Hispasonic](https://github.com/albertjimrod/personal_proj_hispasonic/blob/main/project_4/ETL_scrapped_data_folders_to_csv.ipynb):
  
 
   ETL, which stands for Extract, Transform, Load, is a process commonly used in data warehousing and analytics to prepare and consolidate data from various sources for analysis and reporting purposes.
