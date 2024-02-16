@@ -8,10 +8,12 @@
 
 This is the first part of the project:
 
-- [project_1 from_web_to_csv](https://github.com/albertjimrod/personal_proj_hispasonic/blob/main/project_1/01_from_web_to_csv_togit.ipynb) :
+
 
 
 ### Data Capture and Cleaning Process Overview
+
+## [project_1 from_web_to_csv](https://github.com/albertjimrod/personal_proj_hispasonic/blob/main/project_1/01_from_web_to_csv_togit.ipynb):
 
 This project outlines the step-by-step process followed to capture and clean data from the Hispasonic website. Starting from scratch, the project involved understanding the necessary steps and strategies to condense advertisement information into a CSV file effectively.
 
