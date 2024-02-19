@@ -1,4 +1,4 @@
-# Personal project: hispasonic.
+# Personal project: Web scrapper + ETL + EDA + ML.
 
 <img src="https://support.musicgateway.com/wp-content/uploads/2021/04/Copy-of-800-x-500-Blog-Post-5-4.png" alt="2hand" style="width:350px;"/>
 
@@ -123,11 +123,11 @@ After addressing these questions, the next step is to formulate hypotheses based
 
   ETL, which stands for Extract, Transform, Load, is a process commonly used in data warehousing and analytics to prepare and consolidate data from various sources for analysis and reporting purposes.
 
-    - **Extract**: In the extraction phase, data is gathered and extracted from multiple sources, which can include databases, files, APIs, and other repositories. This step involves identifying and retrieving relevant data sets needed for analysis.
+- **Extract**: In the extraction phase, data is gathered and extracted from multiple sources, which can include databases, files, APIs, and other repositories. This step involves identifying and retrieving relevant data sets needed for analysis.
 
-    - **Transform**: Once the data is extracted, it often needs to be transformed to make it suitable for analysis. Transformation involves cleaning, filtering, aggregating, and structuring the data to ensure consistency and accuracy. This step may also include enriching the data by combining it with other sources or performing calculations and derivations.
+- **Transform**: Once the data is extracted, it often needs to be transformed to make it suitable for analysis. Transformation involves cleaning, filtering, aggregating, and structuring the data to ensure consistency and accuracy. This step may also include enriching the data by combining it with other sources or performing calculations and derivations.
 
-    - **Load**: After the data has been extracted and transformed, it is loaded into a target destination, such as a data warehouse, database, or data lake. This final step ensures that the processed data is stored in a structured format, making it accessible for querying, analysis, and reporting.
+- **Load**: After the data has been extracted and transformed, it is loaded into a target destination, such as a data warehouse, database, or data lake. This final step ensures that the processed data is stored in a structured format, making it accessible for querying, analysis, and reporting.
 
     ETL plays a critical role in data integration and preparation, enabling organizations to centralize and harmonize disparate data sources, improve data quality, and derive valuable insights for decision-making.
 
