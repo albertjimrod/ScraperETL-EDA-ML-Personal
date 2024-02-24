@@ -1,4 +1,4 @@
-# Personal project: Web scrapper + ETL + EDA + ML.
+# Personal project: Web scrapper + ETL + EDA.
 
 <img src="https://support.musicgateway.com/wp-content/uploads/2021/04/Copy-of-800-x-500-Blog-Post-5-4.png" alt="2hand" style="width:350px;"/>
 
