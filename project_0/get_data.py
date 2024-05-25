@@ -21,12 +21,6 @@ from extracting_functions.cleaning_links import htmls_folders
 from extracting_functions.cleaning_links import dictionary_filter
 from extracting_functions.downloading_ads import download_ads
 
-#from brand_functions.manufacturers import sintes
-#from brand_functions.cleaning_manufacturers import cleaning_names
-
-
-
-local_path = '/home/ion/Documentos/albertjimrod/hispaok/htmls/'
 
 url = "https://www.hispasonic.com/anuncios/teclados-sintetizadores"
 main_url='https://www.hispasonic.com'

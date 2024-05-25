@@ -1,0 +1,43 @@
+2. Main strategy, get the number of pages to analyze.
+
+2.1 Exploring `unordered_list` variable.
+
+### 2.2 How to get the value number from `unordered_list`?
+
+## 3. Getting and save all links (ads and not ads)
+
+## 3.1 Cleaning links.
+
+## 3.2 Download all the ads.
+
+## 3.3 It's not all about sales.
+
+
+## 3.4 Elements of the ad that we are going to extract.
+
+
+## 3.5 Extraction of the `action` and the `brand` name from the description.
+
+
+### 3.5-1 Extraction of synthesizer name.
+
+
+#### Synthesizer manufacturers.
+
+## 3.6 How to identify manufacturer brands?.
+
+
+## Building the manufacturer's dictionary## 
+
+3.7 Detecting manufacturer brands.
+
+
+## 3.8 Date extraction
+
+
+## 3.9 Clean the column of the publication dates.
+
+
+### Last step
+
+
